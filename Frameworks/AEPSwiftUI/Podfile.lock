@@ -13,7 +13,7 @@ PODS:
     - AEPEdge (< 6.0.0, >= 5.0.0)
   - AEPEdgeIdentity (5.0.0):
     - AEPCore (< 6.0.0, >= 5.0.0)
-  - AEPMessaging (5.1.1):
+  - AEPMessaging (5.2.0):
     - AEPCore (< 6.0.0, >= 5.2.0)
     - AEPEdge (< 6.0.0, >= 5.0.2)
     - AEPEdgeIdentity (< 6.0.0, >= 5.0.0)
@@ -29,7 +29,7 @@ DEPENDENCIES:
   - AEPAssurance
   - AEPCore
   - AEPEdgeConsent
-  - AEPMessaging
+  - AEPMessaging (from `https://github.com/sbenedicadb/aepsdk-messaging-ios.git`, tag `dev-v5.3.0`)
   - AEPTestUtils (from `https://github.com/adobe/aepsdk-testutils-ios.git`, tag `5.0.1`)
   - SwiftLint (= 0.52.0)
 
@@ -40,17 +40,22 @@ SPEC REPOS:
     - AEPEdge
     - AEPEdgeConsent
     - AEPEdgeIdentity
-    - AEPMessaging
     - AEPRulesEngine
     - AEPServices
     - SwiftLint
 
 EXTERNAL SOURCES:
+  AEPMessaging:
+    :git: https://github.com/sbenedicadb/aepsdk-messaging-ios.git
+    :tag: dev-v5.3.0
   AEPTestUtils:
     :git: https://github.com/adobe/aepsdk-testutils-ios.git
     :tag: 5.0.1
 
 CHECKOUT OPTIONS:
+  AEPMessaging:
+    :git: https://github.com/sbenedicadb/aepsdk-messaging-ios.git
+    :tag: dev-v5.3.0
   AEPTestUtils:
     :git: https://github.com/adobe/aepsdk-testutils-ios.git
     :tag: 5.0.1
@@ -61,12 +66,12 @@ SPEC CHECKSUMS:
   AEPEdge: edf73ae8900016940cd7fcb29a89a576a1c6b0ae
   AEPEdgeConsent: d7db1d19eb4c1e2146360ed3c8df315f671b26d5
   AEPEdgeIdentity: 3161ff33434586962946912d6b8e9e8fca1c4d23
-  AEPMessaging: efbbc2d967d3665c5f334ec7f9684fb0924c3b3c
+  AEPMessaging: cee05697723e26bfb42aa7b05c9cd726ff7c95bb
   AEPRulesEngine: fe5800653a4bee07b1e41e61b4d5551f0dba557b
   AEPServices: d959143d13fde7e8464c19527df6baacdef765ce
   AEPTestUtils: 6b043ef1de8fc7fb4067f7fa6e2dcdaf9ba4e54f
   SwiftLint: 13280e21cdda6786ad908dc6e416afe5acd1fcb7
 
-PODFILE CHECKSUM: 6633ff9ffc3402861548690da5e47bb519130e18
+PODFILE CHECKSUM: b8a431e0e728293da60724d8a7968d8942c237a9
 
 COCOAPODS: 1.15.0

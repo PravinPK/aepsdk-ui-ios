@@ -63,6 +63,17 @@ extension ContentCardSchemaData {
 
         return buttonsData.compactMap { AEPButton($0, template) }
     }
+    
+    /// Extracts the array of buttons from the content dictionary and initializes `AEPButton` objects with it.
+    /// - Parameter template: The `ContentCardTemplate` instance for which the buttons are initialized.
+    /// - Returns: An array of `AEPButton` objects, or `nil` if the buttons data is not available.
+    func getDismissButton(forTemplate template: any ContentCardTemplate) -> AEPDismissButton? {
+        guard let dismissButtonData = contentDict?[Constants.CardTemplate.SchemaData.DISMISS_BTN] as? [String: Any] else {
+            return nil
+        }
+
+        return AEPDismissButton(dismissButtonData, template)
+    }
 
     /// This property extracts the action URL from the content dictionary and returns it as a URL object.
     /// Returns `nil` if the action URL is not available or if it is not a valid URL.

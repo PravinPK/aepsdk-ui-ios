@@ -12,14 +12,19 @@
 
 import Foundation
 
-/// The ImageSourceType enum is used to identify the source type of an image in the AEPImage model.
-enum ImageSourceType {
-    /// Indicates that the image is sourced from a URL.
-    case url
+enum DismissButtonStyle: String {
+    case simple = "simple"
+    case circle = "circle"
+    case none = "none"
 
-    /// Indicates that the image is sourced from a bundled resource within the app
-    case bundle
-    
-    /// Indicates that the image is sourced from SF Symbols
-    case icon
+    var iconName: String? {
+        switch self {
+        case .simple:
+            return Constants.CardTemplate.DismissButton.Icon.SIMPLE
+        case .circle:
+            return Constants.CardTemplate.DismissButton.Icon.CIRCLE
+        case .none:
+            return nil
+        }
+    }
 }

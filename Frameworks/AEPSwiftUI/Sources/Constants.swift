@@ -21,6 +21,7 @@ enum Constants {
         static let LargeImage = "LargeImage"
         static let ImageOnly = "ImageOnly"
 
+
         enum InteractionID {
             // TODO: Verify with PM to see if this Interaction event name makes sense of all platforms
             static let cardTapped = "Card Clicked"
@@ -37,6 +38,23 @@ enum Constants {
             static let IMAGE = "image"
             static let ACTION_URL = "actionUrl"
             static let BUTTONS = "buttons"
+            static let DISMISS_BTN = "dismissBtn"
+        }
+        
+        
+        enum DismissButton {
+            static let STYLE = "style"
+            
+            enum Style {
+                static let NONE = "none"
+                static let SIMPLE = "simple"
+                static let CIRCLE = "circle"
+            }
+            
+            enum Icon {
+                static let SIMPLE = "xmark"
+                static let CIRCLE = "xmark.circle.fill"
+            }
         }
 
         enum UIElement {
@@ -55,6 +73,8 @@ enum Constants {
                 static let DARK_URL = "darkUrl"
                 static let BUNDLE = "bundle"
                 static let DARK_BUNDLE = "darkBundle"
+                static let ICON = "icon"
+                static let ICON_COLOR = "iconColor"
             }
         }
     }

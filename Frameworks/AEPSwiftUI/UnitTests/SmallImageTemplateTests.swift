@@ -22,7 +22,7 @@ final class SmallImageTemplateTests: XCTestCase {
         let schema = ContentCardTestUtil.createContentCardSchemaData(fromFile: "SmallImageTemplate")
 
         // test
-        let smallImageTemplate = SmallImageTemplate(schema)
+        let smallImageTemplate = SmallImageTemplate(schema, <#ContentCardCustomizer?#>)
 
         // verify
         XCTAssertNotNil(smallImageTemplate)

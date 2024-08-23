@@ -38,12 +38,15 @@ public class BaseTemplate: ObservableObject {
     /// Boolean indicating if the template's view is displayed to the user
     /// Use this boolean to avoid sending multiple display events on a template
     var isDisplayed: Bool = false
+    
+    var dismissButton: AEPDismissButton?
 
     /// Initializes a `BaseTemplate` with the given schema data.
     /// This initializer is designed to be called by subclasses to perform common initialization tasks.
     /// - Parameter schemaData: The schema data used for initialization.
     init?(_ schemaData: ContentCardSchemaData) {
         self.actionURL = schemaData.actionUrl
+        
     }
 
     /// Constructs a SwiftUI view with common properties and behaviors applied for all templates.
