@@ -19,34 +19,60 @@ struct HomePage: View, ContentCardUIEventListening {
     @State var savedCards : [ContentCardUI] = []
     
     var body: some View {
-        Spacer()
-        Text("Content Cards").font(.title)
-        ScrollView (.vertical, showsIndicators: false){
-            LazyVStack(spacing: 20) {
-                 ForEach(savedCards) { card in
-                     card.view
-                         .frame(width: 325, height: 110)
-                         .overlay(
-                             RoundedRectangle(cornerRadius: 5)
-                                .stroke(Color(.systemGray3), lineWidth: 1)
-                         )
+        NavigationView {
+            VStack {
+                Spacer()
+                Text("Content Cards").font(.title)
+                ScrollView (.horizontal, showsIndicators: false) {
+                    
+                    
+                    LazyHStack(spacing: 20) {
+                         ForEach(savedCards) { card in
+                             card.view
+                                 .frame(width: 325, height: 130)
+                                 .overlay(
+                                     RoundedRectangle(cornerRadius: 5)
+                                        .stroke(Color(.systemGray3), lineWidth: 1))
+                        }
+                    }
+                }
+                .frame(height: 150)
+                Spacer()
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        getContentCard()
+                    }, label: {
+                        Image(systemName: "arrow.clockwise.circle.fill")
+                            .foregroundColor(.green)
+                            .font(.system(size: 25))
+                    })
+                    Spacer()
+                    NavigationLink(destination: PDFPage(), label: {
+                        Text("PDF Page ->")
+                    })
+                    Spacer()
                 }
             }
         }
         .padding()
         .onAppear() {
-            let homePageSurface = Surface(path: "homepage")
-            AEPSwiftUI.getContentCardsUI(for: homePageSurface,
-                                         customizer: HomePageCardCustomizer(),
-                                         listener: self) { result in
-                switch result {
-                case .success(let cards):
-                    savedCards = cards
-                    
-                case .failure(let error):
-                    print(error)
-                    
-                }
+            getContentCard()
+        }
+    }
+    
+    private func getContentCard() {
+        let homePageSurface = Surface(path: "homepage")
+        AEPSwiftUI.getContentCardsUI(for: homePageSurface,
+                                     customizer: HomePageCardCustomizer(),
+                                     listener: self) { result in
+            switch result {
+            case .success(let cards):
+                savedCards = cards
+                
+            case .failure(let error):
+                print(error)
+                
             }
         }
     }
@@ -71,14 +97,13 @@ class HomePageCardCustomizer : ContentCardCustomizing {
     func customize(template: SmallImageTemplate) {
         // customize UI elements
         template.title.textColor = .primary
-        template.title.font = .subheadline
+        template.title.font = .system(size: 16)
         template.body?.textColor = .secondary
-        template.body?.font = .caption
+        template.body?.font = .system(size: 13)
         template.buttons?.first?.text.font = .system(size: 13)
         
         // customize stack structure
         template.rootHStack.spacing = 10
-        template.textVStack.alignment = .leading
         template.textVStack.spacing = 10
         
         // add custom modifiers
@@ -87,8 +112,11 @@ class HomePageCardCustomizer : ContentCardCustomizing {
         
         // customize the dismiss buttons
         template.dismissButton?.image.iconColor = .primary
-        template.dismissButton?.image.iconFont = .system(size: 10)
+        template.dismissButton?.image.iconFont = .system(size: 13)
     }
+    
+    
+    
     
     struct RootHStackModifier : ViewModifier {
         func body(content: Content) -> some View {

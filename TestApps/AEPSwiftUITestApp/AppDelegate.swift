@@ -27,16 +27,21 @@ class AppDelegate: NSObject, UIApplicationDelegate {
                           Edge.self,
                           Consent.self,
                           Identity.self,
-                          Identity.self,
                           Assurance.self
                         ]
         MobileCore.registerExtensions(extensions, {
-            MobileCore.configureWith(appId: "")
-            
-            let homePageSurface = Surface(path: "homepage")
-            Messaging.updatePropositionsForSurfaces([homePageSurface])
+            MobileCore.configureWith(appId: "staging/1b50a869c4a2/5f4ddd10a050/launch-bd5dd917b88c")
+            MobileCore.updateConfigurationWith(configDict: ["edge.environment": "int"])
         })
+        
+        // STEP : 1
+        // Download the content cards using Messaging API
+        let homePageSurface = Surface(path: "homepage")
+        let pdfPageSurface = Surface(path: "pdfpage")
+        Messaging.updatePropositionsForSurfaces([homePageSurface, pdfPageSurface])
+        
+        
         MobileCore.setLogLevel(.trace)
-        return true
+        return true 
     }
 }
