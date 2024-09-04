@@ -17,12 +17,17 @@ import PackageDescription
 
 let package = Package(
     name: "AEPUI",
-    platforms: [.iOS(.v12)],
     products: [
-        .library(name: "AEPNotificationContent", targets: ["AEPNotificationContent"])
+        .library(name: "AEPNotificationContent", targets: ["AEPNotificationContent"]),
+        .library(name: "AEPSwiftUI", targets: ["AEPSwiftUI"])
+    ],
+    dependencies: [
+        .package(path: "Frameworks/AEPNotificationContent"),
+        .package(path: "Frameworks/AEPSwiftUI")
     ],
     targets: [
-        .target(name: "AEPNotificationContent",
-                path: "Frameworks/AEPNotificationContent/Sources")
+        .target(name: "AEPNotificationContent", dependencies: ["AEPNotificationContent"]),
+        .target(name: "AEPSwiftUI", dependencies: ["AEPSwiftUI"])
     ]
 )
+
