@@ -85,6 +85,13 @@
 		B669EE222C7FA11E00A26954 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B669EE202C7FA11E00A26954 /* Main.storyboard */; };
 		B669EE242C7FA11F00A26954 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B669EE232C7FA11F00A26954 /* Assets.xcassets */; };
 		B669EE272C7FA11F00A26954 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B669EE252C7FA11F00A26954 /* LaunchScreen.storyboard */; };
+		B669EE732C88D55000A26954 /* AEPUIContentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B669EE702C88D55000A26954 /* AEPUIContentManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B669EE7C2C88D9D700A26954 /* AEPUIContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B669EE7B2C88D9D700A26954 /* AEPUIContentManager.swift */; };
+		B669EE7E2C88D9EE00A26954 /* AEPUIInteractionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B669EE7D2C88D9EE00A26954 /* AEPUIInteractionTracker.swift */; };
+		B669EE872C88DA2300A26954 /* AEPTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = B669EE862C88DA2300A26954 /* AEPTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B669EE8C2C88DA9700A26954 /* AEPTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B669EE8B2C88DA9600A26954 /* AEPTemplate.swift */; };
+		B669EE8D2C88DBFB00A26954 /* AEPTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B669EE842C88DA2300A26954 /* AEPTemplate.framework */; };
+		B669EE8E2C88DBFB00A26954 /* AEPTemplate.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B669EE842C88DA2300A26954 /* AEPTemplate.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B6F4D18F2C62735600376045 /* ContentCardUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F4D18E2C62735600376045 /* ContentCardUI.swift */; };
 		B6F4D1942C6279C300376045 /* ContentCardTemplateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F4D1932C6279C300376045 /* ContentCardTemplateType.swift */; };
 		B6F4D19C2C628FFF00376045 /* AEPText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F4D19B2C628FFF00376045 /* AEPText.swift */; };
@@ -117,6 +124,13 @@
 			remoteGlobalIDString = B626E04C2C5EC1F400ED1816;
 			remoteInfo = AEPSwiftUI;
 		};
+		B669EE8F2C88DBFB00A26954 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B626E0442C5EC1F400ED1816 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B669EE832C88DA2300A26954;
+			remoteInfo = AEPTemplate;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -127,6 +141,17 @@
 			dstSubfolderSpec = 10;
 			files = (
 				B669ED932C75440000A26954 /* AEPSwiftUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B669EE912C88DBFB00A26954 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B669EE8E2C88DBFB00A26954 /* AEPTemplate.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +237,13 @@
 		B669EE232C7FA11F00A26954 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B669EE262C7FA11F00A26954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B669EE282C7FA11F00A26954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B669EE6E2C88D55000A26954 /* AEPUIContentManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AEPUIContentManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B669EE702C88D55000A26954 /* AEPUIContentManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEPUIContentManager.h; sourceTree = "<group>"; };
+		B669EE7B2C88D9D700A26954 /* AEPUIContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEPUIContentManager.swift; sourceTree = "<group>"; };
+		B669EE7D2C88D9EE00A26954 /* AEPUIInteractionTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEPUIInteractionTracker.swift; sourceTree = "<group>"; };
+		B669EE842C88DA2300A26954 /* AEPTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AEPTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B669EE862C88DA2300A26954 /* AEPTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEPTemplate.h; sourceTree = "<group>"; };
+		B669EE8B2C88DA9600A26954 /* AEPTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEPTemplate.swift; sourceTree = "<group>"; };
 		B6F4D18E2C62735600376045 /* ContentCardUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCardUI.swift; sourceTree = "<group>"; };
 		B6F4D1932C6279C300376045 /* ContentCardTemplateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCardTemplateType.swift; sourceTree = "<group>"; };
 		B6F4D19B2C628FFF00376045 /* AEPText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEPText.swift; sourceTree = "<group>"; };
@@ -256,6 +288,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B669EE6B2C88D55000A26954 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B669EE8D2C88DBFB00A26954 /* AEPTemplate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B669EE812C88DA2300A26954 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -295,6 +342,8 @@
 				B626E05E2C5EC26300ED1816 /* Tests */,
 				B669ED832C75403200A26954 /* AEPSwiftUITestApp */,
 				B669EE192C7FA11E00A26954 /* AEPSwiftUITestAppUIKit */,
+				B669EE6F2C88D55000A26954 /* AEPUIContentManager */,
+				B669EE852C88DA2300A26954 /* AEPTemplate */,
 				B626E04E2C5EC1F400ED1816 /* Products */,
 				099D602B29F2B1041D78D90A /* Pods */,
 				A2B95FA98504EDDB2E02255B /* Frameworks */,
@@ -308,6 +357,8 @@
 				B626E05D2C5EC26300ED1816 /* UnitTests.xctest */,
 				B669ED822C75403200A26954 /* AEPSwiftUITestApp.app */,
 				B669EE182C7FA11E00A26954 /* AEPSwiftUITestAppUIKit.app */,
+				B669EE6E2C88D55000A26954 /* AEPUIContentManager.framework */,
+				B669EE842C88DA2300A26954 /* AEPTemplate.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -477,6 +528,25 @@
 			path = ../../TestApps/AEPSwiftUITestAppUIKit;
 			sourceTree = "<group>";
 		};
+		B669EE6F2C88D55000A26954 /* AEPUIContentManager */ = {
+			isa = PBXGroup;
+			children = (
+				B669EE702C88D55000A26954 /* AEPUIContentManager.h */,
+				B669EE7D2C88D9EE00A26954 /* AEPUIInteractionTracker.swift */,
+				B669EE7B2C88D9D700A26954 /* AEPUIContentManager.swift */,
+			);
+			path = AEPUIContentManager;
+			sourceTree = "<group>";
+		};
+		B669EE852C88DA2300A26954 /* AEPTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				B669EE862C88DA2300A26954 /* AEPTemplate.h */,
+				B669EE8B2C88DA9600A26954 /* AEPTemplate.swift */,
+			);
+			path = AEPTemplate;
+			sourceTree = "<group>";
+		};
 		B6F4D1902C6278AD00376045 /* ContentCards */ = {
 			isa = PBXGroup;
 			children = (
@@ -528,6 +598,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				B626E0512C5EC1F400ED1816 /* AEPSwiftUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B669EE692C88D55000A26954 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B669EE732C88D55000A26954 /* AEPUIContentManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B669EE7F2C88DA2300A26954 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B669EE872C88DA2300A26954 /* AEPTemplate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +699,44 @@
 			productReference = B669EE182C7FA11E00A26954 /* AEPSwiftUITestAppUIKit.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B669EE6D2C88D55000A26954 /* AEPUIContentManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B669EE7A2C88D55000A26954 /* Build configuration list for PBXNativeTarget "AEPUIContentManager" */;
+			buildPhases = (
+				B669EE692C88D55000A26954 /* Headers */,
+				B669EE6A2C88D55000A26954 /* Sources */,
+				B669EE6B2C88D55000A26954 /* Frameworks */,
+				B669EE6C2C88D55000A26954 /* Resources */,
+				B669EE912C88DBFB00A26954 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B669EE902C88DBFB00A26954 /* PBXTargetDependency */,
+			);
+			name = AEPUIContentManager;
+			productName = AEPUIContentManager;
+			productReference = B669EE6E2C88D55000A26954 /* AEPUIContentManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B669EE832C88DA2300A26954 /* AEPTemplate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B669EE882C88DA2300A26954 /* Build configuration list for PBXNativeTarget "AEPTemplate" */;
+			buildPhases = (
+				B669EE7F2C88DA2300A26954 /* Headers */,
+				B669EE802C88DA2300A26954 /* Sources */,
+				B669EE812C88DA2300A26954 /* Frameworks */,
+				B669EE822C88DA2300A26954 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AEPTemplate;
+			productName = AEPTemplate;
+			productReference = B669EE842C88DA2300A26954 /* AEPTemplate.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -639,6 +763,14 @@
 					B669EE172C7FA11E00A26954 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
+					B669EE6D2C88D55000A26954 = {
+						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
+					};
+					B669EE832C88DA2300A26954 = {
+						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
+					};
 				};
 			};
 			buildConfigurationList = B626E0472C5EC1F400ED1816 /* Build configuration list for PBXProject "AEPSwiftUI" */;
@@ -659,6 +791,8 @@
 				B626E0672C60A36500ED1816 /* AEPSwiftUIXCF */,
 				B669ED812C75403200A26954 /* AEPSwiftUITestApp */,
 				B669EE172C7FA11E00A26954 /* AEPSwiftUITestAppUIKit */,
+				B669EE6D2C88D55000A26954 /* AEPUIContentManager */,
+				B669EE832C88DA2300A26954 /* AEPTemplate */,
 			);
 		};
 /* End PBXProject section */
@@ -698,6 +832,20 @@
 				B669EE272C7FA11F00A26954 /* LaunchScreen.storyboard in Resources */,
 				B669EE242C7FA11F00A26954 /* Assets.xcassets in Resources */,
 				B669EE222C7FA11E00A26954 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B669EE6C2C88D55000A26954 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B669EE822C88DA2300A26954 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -929,6 +1077,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B669EE6A2C88D55000A26954 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B669EE7E2C88D9EE00A26954 /* AEPUIInteractionTracker.swift in Sources */,
+				B669EE7C2C88D9D700A26954 /* AEPUIContentManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B669EE802C88DA2300A26954 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B669EE8C2C88DA9700A26954 /* AEPTemplate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -946,6 +1111,11 @@
 			isa = PBXTargetDependency;
 			target = B626E04C2C5EC1F400ED1816 /* AEPSwiftUI */;
 			targetProxy = B669ED942C75440000A26954 /* PBXContainerItemProxy */;
+		};
+		B669EE902C88DBFB00A26954 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B669EE832C88DA2300A26954 /* AEPTemplate */;
+			targetProxy = B669EE8F2C88DBFB00A26954 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1225,6 +1395,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6630EC878F77BE418BBEFA85 /* Pods-AEPSwiftUITestApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1256,6 +1427,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 91CF32B1E170EB424505DE98 /* Pods-AEPSwiftUITestApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1343,6 +1515,140 @@
 			};
 			name = Release;
 		};
+		B669EE782C88D55000A26954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FKGEE875K4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adobe.aep.AEPUIContentManager;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B669EE792C88D55000A26954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FKGEE875K4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adobe.aep.AEPUIContentManager;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B669EE892C88DA2300A26954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FKGEE875K4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adobe.aep.AEPTemplate;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B669EE8A2C88DA2300A26954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FKGEE875K4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adobe.aep.AEPTemplate;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1396,6 +1702,24 @@
 			buildConfigurations = (
 				B669EE292C7FA11F00A26954 /* Debug */,
 				B669EE2A2C7FA11F00A26954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B669EE7A2C88D55000A26954 /* Build configuration list for PBXNativeTarget "AEPUIContentManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B669EE782C88D55000A26954 /* Debug */,
+				B669EE792C88D55000A26954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B669EE882C88DA2300A26954 /* Build configuration list for PBXNativeTarget "AEPTemplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B669EE892C88DA2300A26954 /* Debug */,
+				B669EE8A2C88DA2300A26954 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
