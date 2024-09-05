@@ -19,13 +19,12 @@ struct HomePage: View, ContentCardUIEventListening {
     @State var savedCards : [ContentCardUI] = []
     
     var body: some View {
-        NavigationView {
             VStack {
                 Spacer()
                 Text("Content Cards").font(.title)
+                
+                // Display Content Cards
                 ScrollView (.horizontal, showsIndicators: false) {
-                    
-                    
                     LazyHStack(spacing: 20) {
                          ForEach(savedCards) { card in
                              card.view
@@ -36,25 +35,12 @@ struct HomePage: View, ContentCardUIEventListening {
                         }
                     }
                 }
+                
+                
+                
                 .frame(height: 150)
                 Spacer()
-                HStack {
-                    Spacer()
-                    Button(action: {
-                        getContentCard()
-                    }, label: {
-                        Image(systemName: "arrow.clockwise.circle.fill")
-                            .foregroundColor(.green)
-                            .font(.system(size: 25))
-                    })
-                    Spacer()
-                    NavigationLink(destination: PDFPage(), label: {
-                        Text("PDF Page ->")
-                    })
-                    Spacer()
-                }
             }
-        }
         .padding()
         .onAppear() {
             getContentCard()
@@ -78,16 +64,16 @@ struct HomePage: View, ContentCardUIEventListening {
     }
     
     func onDisplay(_ card: ContentCardUI) {
-        print("TestAppLog : ContentCard Displayed")
+        print("TestAppLog : Tracking Card Display")
     }
     
     func onDismiss(_ card: ContentCardUI) {
-        print("TestAppLog : ContentCard Dismissed")
+        print("TestAppLog : Tracking Card Dismiss")
         savedCards.removeAll(where: { $0.id == card.id })
     }
     
     func onInteract(_ card: ContentCardUI, _ interactionId: String, actionURL: URL?) -> Bool {
-        print("TestAppLog : ContentCard Interacted : Interaction - \(interactionId)")
+        print("TestAppLog : Tracking Card Interaction : ID - \(interactionId)")
         return false
     }
 }
@@ -114,9 +100,6 @@ class HomePageCardCustomizer : ContentCardCustomizing {
         template.dismissButton?.image.iconColor = .primary
         template.dismissButton?.image.iconFont = .system(size: 13)
     }
-    
-    
-    
     
     struct RootHStackModifier : ViewModifier {
         func body(content: Content) -> some View {

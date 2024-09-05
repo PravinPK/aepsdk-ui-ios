@@ -79,6 +79,8 @@
 		B669EDC22C7C415700A26954 /* AEPDismissButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B669EDC12C7C415700A26954 /* AEPDismissButtonTests.swift */; };
 		B669EDC52C7D0C8100A26954 /* ContentCardUIEventListening.swift in Sources */ = {isa = PBXBuildFile; fileRef = B669EDC42C7D0C8100A26954 /* ContentCardUIEventListening.swift */; };
 		B669EDD42C7D53B600A26954 /* PDFPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B669EDD32C7D53B600A26954 /* PDFPage.swift */; };
+		B669EEA22C897E9D00A26954 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B669EEA12C897E9D00A26954 /* ContentView.swift */; };
+		B669EEA42C8980D000A26954 /* SouthwestPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B669EEA32C8980D000A26954 /* SouthwestPage.swift */; };
 		B6F4D18F2C62735600376045 /* ContentCardUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F4D18E2C62735600376045 /* ContentCardUI.swift */; };
 		B6F4D1942C6279C300376045 /* ContentCardTemplateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F4D1932C6279C300376045 /* ContentCardTemplateType.swift */; };
 		B6F4D19C2C628FFF00376045 /* AEPText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F4D19B2C628FFF00376045 /* AEPText.swift */; };
@@ -196,6 +198,8 @@
 		B669EDC12C7C415700A26954 /* AEPDismissButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEPDismissButtonTests.swift; sourceTree = "<group>"; };
 		B669EDC42C7D0C8100A26954 /* ContentCardUIEventListening.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCardUIEventListening.swift; sourceTree = "<group>"; };
 		B669EDD32C7D53B600A26954 /* PDFPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPage.swift; sourceTree = "<group>"; };
+		B669EEA12C897E9D00A26954 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B669EEA32C8980D000A26954 /* SouthwestPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthwestPage.swift; sourceTree = "<group>"; };
 		B6F4D18E2C62735600376045 /* ContentCardUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCardUI.swift; sourceTree = "<group>"; };
 		B6F4D1932C6279C300376045 /* ContentCardTemplateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCardTemplateType.swift; sourceTree = "<group>"; };
 		B6F4D19B2C628FFF00376045 /* AEPText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEPText.swift; sourceTree = "<group>"; };
@@ -409,8 +413,10 @@
 				B669ED842C75403200A26954 /* TestApp.swift */,
 				B669ED862C75403200A26954 /* HomePage.swift */,
 				B669EDD32C7D53B600A26954 /* PDFPage.swift */,
+				B669EEA32C8980D000A26954 /* SouthwestPage.swift */,
 				B669ED882C75403400A26954 /* Assets.xcassets */,
 				B669ED8A2C75403400A26954 /* Preview Content */,
+				B669EEA12C897E9D00A26954 /* ContentView.swift */,
 			);
 			name = AEPSwiftUITestApp;
 			path = ../../TestApps/AEPSwiftUITestApp;
@@ -799,6 +805,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B669ED912C75416100A26954 /* AppDelegate.swift in Sources */,
+				B669EEA42C8980D000A26954 /* SouthwestPage.swift in Sources */,
+				B669EEA22C897E9D00A26954 /* ContentView.swift in Sources */,
 				B669ED872C75403200A26954 /* HomePage.swift in Sources */,
 				B669ED852C75403200A26954 /* TestApp.swift in Sources */,
 				B669EDD42C7D53B600A26954 /* PDFPage.swift in Sources */,

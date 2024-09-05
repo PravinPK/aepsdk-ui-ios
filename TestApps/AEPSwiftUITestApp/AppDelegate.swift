@@ -35,12 +35,12 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         })
         
         // STEP : 1
-        // Download the content cards using Messaging API
+        // Download the cards using Messaging API
         let homePageSurface = Surface(path: "homepage")
         let pdfPageSurface = Surface(path: "pdfpage")
-        Messaging.updatePropositionsForSurfaces([homePageSurface, pdfPageSurface])
-        
-        
+        let southwestSurface = Surface(path: "southwestCards")
+        Messaging.updatePropositionsForSurfaces([homePageSurface, pdfPageSurface, southwestSurface])
+                
         MobileCore.setLogLevel(.trace)
         return true 
     }
