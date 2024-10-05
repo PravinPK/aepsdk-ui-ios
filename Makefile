@@ -26,7 +26,7 @@ IOS_DESTINATION = 'platform=iOS Simulator,name=iPhone 15'
 
 # testing targets
 
-test: clean aep-notification-content-unit-test aep-swift-ui-unit-test
+test: clean aep-notification-content-unit-test aep-swift-ui-unit-test aep-swift-ui-integration-test
 
 aep-notification-content-unit-test: 
 	@echo "######################################################################"
