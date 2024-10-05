@@ -44,6 +44,14 @@ aep-swift-ui-unit-test:
 		-scheme "UnitTests" -destination $(IOS_DESTINATION) -derivedDataPath build/out \
 		-resultBundlePath build/$(AEPSWIFTUI).xcresult -enableCodeCoverage YES
 
+aep-swift-ui-integration-test:
+	@echo "######################################################################"
+	@echo "### Integration Testing AEPSwiftUI"
+	@echo "######################################################################"
+	xcodebuild test -workspace $(AEPSWIFTUI_WORKSPACE) \
+		-scheme "IntegrationTest" -destination $(IOS_DESTINATION) -derivedDataPath build/out \
+		-resultBundlePath build/$(AEPSWIFTUI).xcresult -enableCodeCoverage YES
+
 # build and archive targets
 
 archive: pod-install _archive
