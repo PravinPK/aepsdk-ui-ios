@@ -11,6 +11,7 @@ AEPNOTIFICATIONCONTENT_TARGET_NAME_XCFRAMEWORK = $(AEPNOTIFICATIONCONTENT).xcfra
 AEPNOTIFICATIONCONTENT_SCHEME_NAME_XCFRAMEWORK = $(AEPNOTIFICATIONCONTENT)XCF
 
 AEPSWIFTUI = AEPSwiftUI
+AEPSWIFTUI_INTEGRATION_TEST_RESULT = AEPSwiftUI_IntegrationTest
 AEPSWIFTUI_PATH = $(FRAMEWORKS_DIRECTORY)/$(AEPSWIFTUI)
 AEPSWIFTUI_WORKSPACE = $(AEPSWIFTUI_PATH)/$(AEPSWIFTUI).xcworkspace
 AEPSWIFTUI_TARGET_NAME_XCFRAMEWORK = $(AEPSWIFTUI).xcframework
@@ -50,7 +51,7 @@ aep-swift-ui-integration-test:
 	@echo "######################################################################"
 	xcodebuild test -workspace $(AEPSWIFTUI_WORKSPACE) \
 		-scheme "IntegrationTest" -destination $(IOS_DESTINATION) -derivedDataPath build/out \
-		-resultBundlePath build/$(AEPSWIFTUI).xcresult -enableCodeCoverage YES
+		-resultBundlePath build/$(AEPSWIFTUI_INTEGRATION_TEST_RESULT).xcresult -enableCodeCoverage YES
 
 # build and archive targets
 
